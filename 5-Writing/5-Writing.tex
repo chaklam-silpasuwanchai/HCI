@@ -1,0 +1,344 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+\usetheme[secheader]{Madrid}
+\usecolortheme{seahorse}
+\useinnertheme{circles}
+}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{tikz}
+\usepackage{url}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Writing]{Writing} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Chaklam Silpasuwanchai} % Your name
+\institute[AIT] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Asian Institute of Technology \\ % Your institution for the title page
+\medskip
+\textit{chaklam@ait.asia} % Your email address
+}
+\date{} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Introduction} 
+ The main \textbf{purpose} is to
+\begin{itemize}
+	\item Argue your \textbf{motivation} and why did you do this work.
+	\item The first impression, if it is badly written, reviewers will likely just skip the rest of the paper and gives you a rejection.  
+	\item This section usually contains \textbf{5 paragraphs} and \textbf{1 key figure}  (same structure as abstract but in expanded version).
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Introduction} 
+\footnotesize
+\begin{itemize}
+	\item In the \textbf{first} paragraph, you should explain the \textbf{background} and current state of your area, as well as the core-related work.   
+	\item In the \textbf{second} paragraph, you should explain the specific \textbf{problem} and gap of past work.  This is perhaps the most important paragraph and you should be very precise what is the problem you want to solve.   
+	\item In the \textbf{third} paragraph, you should explain \textbf{what you did}.  
+	\item In the \textbf{fourth} paragraph, you should explain the \textbf{surprising key findings}. 
+	\item The \textbf{last} paragraph, it is for explaining the \textbf{significance} and \textbf{impact} of this work, why we should care, and why it is important for the research community.  
+\end{itemize}
+For new (especially non-native) students, DON’T DO OTHER FORMAT ASIDE FROM THIS. PLEASE FOLLOW THIS.
+\end{frame}
+
+\begin{frame}
+\frametitle{Common Mistakes} 
+\footnotesize
+\begin{itemize}
+	\item 1st par: Write the background too generally.   \textbf{Instead, you should}:  Write the background in such a way that is VERY close to the problem.  
+	\item 2nd par:  Pick overly broad question or problem.    \textbf{Instead, you should}:  Pick very specific question with clear IV and DV in mind.    A good question should be built upon\textbf{ limitations of past work.}
+	\item 3rd par:  Didn't provide any \textbf{rationale}.   \textbf{Instead, you should}:   The methodology you choose should be provided with reasonable rationale why you think this is a promising methodology, for example, why do you pick these IVs or DVs.    Of course, becareful to going too detailed.   
+	\item 4rd par:  Write all results.  \textbf{Instead, you should}:  Focus on \textbf{key interesting} findings.   Interesting findings are usually one that are not obvious and surprising.
+	\item 5th par:  Does not know how to write impact.   \textbf{Instead, you should}:  This is easy, just copy what your role model papers write.
+\end{itemize}
+\end{frame}
+
+\section{Related Work}
+
+\begin{frame}
+\frametitle{Related Work} 
+ The main \textbf{purpose} is to
+\begin{itemize}
+	\item Reveal research \textbf{gap}
+	\item Reveal potential \textbf{hypotheses}
+	\item Reveal potential \textbf{IV} and \textbf{DV}
+\end{itemize}
+Any work that \textbf{does not meet these three purposes} are NOT related work.
+\end{frame}
+
+\begin{frame}
+\frametitle{Common Mistakes} 
+\footnotesize
+\begin{itemize}
+	\item Educate readers, assuming they are beginners.  \textbf{Instead, you should}:  They are \textbf{experts}, so avoid explaining too much general knowledge.  All experts already know what happen in the past, but what they want from you is insights, not give them a list of work. Explicitly guide them what is the research gap, potential hypotheses, or possible IV that no people has thought about in the past work, so they believe your work (future) is in the correct direction
+	\item Didn't link each of your paragraph to the three purposes.   \textbf{Instead, you should}:  Each of your paragraph should link to your work. 
+	\item List and describe related work.   \textbf{Instead, you should}:  Synthesize your work to reveal gap, hypotheses, IV and DV.    
+	\item Choose \textbf{unrelated},  too \textbf{exploratory}, or too \textbf{old} work.  \textbf{Instead, you should}:  Choose related work that meet the three purposes;  also choose related work with high citations or from renowned venues/universities.   Try to choose related work with \textbf{clear hypotheses} and clear \textbf{IV} and \textbf{DV}  - usually these are works that are solid.   No clear hypotheses or too exploratory usually implies that the authors have little clue what they are doing.
+\end{itemize}
+\end{frame}
+
+\section{Methodology}
+
+\begin{frame}
+\footnotesize
+\frametitle{Methodology} 
+ The main \textbf{purpose} is to describe:
+\begin{itemize}
+	\item \textbf{Goal} - describes the goal of this experiment
+	\item \textbf{Hypothesis} or research questions
+	\item \textbf{Experimental Design} -within or between subject,  IV and DV,  control/confounding/random variables,  counterbalanced method,  number of blocks/trials, how long the entire experiment.
+	\item \textbf{Participants} - how many participants, how many females and males, their mean age and SD, exclusion criteria if any,  demographic information that may affect your study (e.g., in menu study, you would want to report how often did the participants use PC in their daily life),  compensation for them (this is important to know whether participants have any motivational issue)
+	\item \textbf{Apparatus} - what instrument you use, e.g., PC, questionnaires, game systems, etc.   This part is related to confounding variable.
+	\item \textbf{Procedure} - reviewers should be able to imagine clearly what did you exactly do during the experiment, and able to rerun your experiment.
+	\item \textbf{Metrics} - describes what metrics you collect, and why you choose this metric
+\end{itemize}
+\end{frame} 
+
+\begin{frame}
+\frametitle{Common Mistakes} 
+\footnotesize
+\begin{itemize}
+	\item Write in other format.   \textbf{Instead, you should}:  Don't deviate from this format.   There is ONLY one way to write METHODOLOGY,  at least in HCI papers.
+		\item Your experimental design is bad.   \textbf{Instead, you should}:   Follow what we learn in class and then you will be ok!
+	\item Did not carefully explain why you choose certain methodology over the others.  \textbf{Instead, you should}:  For example, justify why you choose to do the experiment in a lab based environment, instead of a field experiment, or why you develop custom app instead of a commercial app.
+	\item \textbf{Too few} number of participants.  \textbf{Instead, you should}: Perform a proper estimation from counterbalanced method, and also from reading papers.   Usually at least 15 to 30 for controlled study.   But if you plan to do exploratory work, you need at least 100.
+\end{itemize}
+\end{frame}
+
+\section{Results}
+
+\begin{frame}
+\frametitle{Results} 
+ The main \textbf{purpose} is to
+\begin{itemize}
+	\item Report your results in the boring way.
+	\item There is ONLY one way to write, so there are not many mistakes.   Just make sure to keep it boring because we are reporting \textbf{facts}.
+	\item Follow the statistical test lecture \textbf{strictly} and you will be fine here.
+\end{itemize}
+\end{frame}
+
+\section{Discussion}
+
+\begin{frame}
+\footnotesize
+\frametitle{Discussion} 
+ The main \textbf{purpose} is to
+\begin{itemize}
+	\item Discuss some interesting perspectives related to your results.   The hidden function is to show \textbf{how smart and how insightful} are the authors and whether you have thought deeply on the topic.
+\end{itemize}
+Possible discussion
+\begin{itemize}
+	\item Did you find what you expect based on your \textbf{hypotheses}?
+	\item How did your work \textbf{compare with related work}? Anything surprising?
+	\item Why did you choose certain \textbf{experimental/device design decisions}, and how did it affect your results?
+	\item Design \textbf{implications} or \textbf{guidelines}
+	\item Discuss the \textbf{core limitations} that you think might affect the validity of your result. Limitation such as \textit{I conduct this study in the US but I have not tested in the UK} is not a limitation to be discussed.  Discuss CONCRETE, REAL limitation.
+	\item \textbf{Future work} - How far are you from the \textbf{ultimate goal}?
+\end{itemize}
+
+\end{frame}
+
+\section{Practical tips}
+
+\begin{frame}
+\frametitle{Practical tips}
+\footnotesize
+\begin{itemize}
+	\item If this is your first time writing, please refrain from writing from scratch. It is really hard to write well because you don't know how too. \textbf{Choose one role model paper} that is closest to your work, and copy and learn from them. Learn basically everything, the style of writing,  works they cited, how they design experiment. Learning from giants is the fastest way to become like them. Get your role model paper out, and read them 20 times.
+	\item \textbf{One paragraph only one idea.}   Each paragraph starts with an \textbf{opening} sentence (“This paper proposes…”) and a signal (e.g., "However") describing the tone and whole idea of the paragraph.   Each paragraph ends with an \textbf{ending} sentence concluding the main idea.
+	\item Choose each word carefully, such that it has \textbf{no two meanings, }for example, \textit{our technique is good} is a bad example because good can means so many things, speed, accuracy, etc.  Remove ambiguity.
+	\item Avoid \textbf{non-informative }sentence, e.g., \textit{Our work is new} or \textit{EEG is useful}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Practical tips}
+\footnotesize
+\begin{itemize}
+	\item \textbf{Nice figures} - all good papers have nice-looking, self-explanatory, informative figures, especially in the \textbf{Introduction}.  I cannot stress enough, but figures are super effective way to convey your ideas to readers
+	\item Each sentence should ALWAYS BE BACKED by some \textbf{evidence}, i.e., DON’T MAKE any claims without evidence
+	\item Ask yourself, what is your \textbf{contribution}?  You SHOULD able to explain in one sentence.  And this contribution should be coherent across abstract, introduction, your experiment, discussion, and conclusion.  \textbf{Having a lot of contributions is usually bad} paper, as it has no focus or depth.
+	\item Make clear what results are \textbf{surprising}, what are expected, do not mix them as it hides away why readers should care about your work.  What surprising is usually that one that greatly advances the field.  Too obvious result IS USUALLY not valuable. 
+	\item \textbf{Iteration} is the key.  Keep in mind that real writing starts when you revise.  The typical number for good paper is around 10 to 15 revisions.
+
+\end{itemize}
+\end{frame}
+
+\section{Workshop}
+
+\begin{frame}
+\frametitle{Activities}
+\footnotesize
+\begin{block}{Workshop}
+Read this paper.  Try to map with what we have studied in a tabular format for each section.
+\end{block}
+\end{frame}
+
+
+
+
+%
+%\subsection{Mental models}
+%
+%\subsection{Motor skills}
+%
+%-----
+
+
+%------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Blocks of Highlighted Text}
+%\begin{block}{Block 1}
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+%\end{block}
+%
+%\begin{block}{Block 2}
+%Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
+%\end{block}
+%
+%\begin{block}{Block 3}
+%Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
+%\end{block}
+%\end{frame}
+
+%------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Multiple Columns}
+%\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+%
+%\column{.45\textwidth} % Left column and width
+%\textbf{Heading}
+%\begin{enumerate}
+%\item Statement
+%\item Explanation
+%\item Example
+%\end{enumerate}
+%
+%\column{.5\textwidth} % Right column and width
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+%
+%\end{columns}
+%\end{frame}
+
+%------------------------------------------------
+%\section{Second Section}
+%%------------------------------------------------
+%
+%\begin{frame}
+%\frametitle{Table}
+%\begin{table}
+%\begin{tabular}{l l l}
+%\toprule
+%\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+%\midrule
+%Treatment 1 & 0.0003262 & 0.562 \\
+%Treatment 2 & 0.0015681 & 0.910 \\
+%Treatment 3 & 0.0009271 & 0.296 \\
+%\bottomrule
+%\end{tabular}
+%\caption{Table caption}
+%\end{table}
+%\end{frame}
+
+%------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Theorem}
+%\begin{theorem}[Mass--energy equivalence]
+%$E = mc^2$
+%\end{theorem}
+%\end{frame}
+
+%------------------------------------------------
+
+%\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+%\frametitle{Verbatim}
+%\begin{example}[Theorem Slide Code]
+%\begin{verbatim}
+%\begin{frame}
+%\frametitle{Theorem}
+%\begin{theorem}[Mass--energy equivalence]
+%$E = mc^2$
+%\end{theorem}
+%\end{frame}\end{verbatim}
+%\end{example}
+%\end{frame}
+
+%------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Figure}
+%Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+%%\begin{figure}
+%%\includegraphics[width=0.8\linewidth]{test}
+%%\end{figure}
+%\end{frame}
+
+%------------------------------------------------
+
+%\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+%\frametitle{Citation}
+%An example of the \verb|\cite| command to cite within the presentation:\\~
+%
+%This statement requires citation \cite{p1}.
+%\end{frame}
+
+%------------------------------------------------
+
+%\begin{frame}
+%\frametitle{References}
+%\footnotesize{
+%\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+%\bibitem[Smith, 2012]{p1} John Smith (2012)
+%\newblock Title of the publication
+%\newblock \emph{Journal Name} 12(3), 45 -- 678.
+%\end{thebibliography}
+%}
+%\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+\frametitle{What's next}
+Read my slide on \textbf{Humans}, and these complimentary resources.  
+	\begin{itemize}
+		\item Jeff, \textbf{Designing with the Mind in Mind: Simple Guide to Understanding User Interface Design Guidelines}, 2nd ed. (2014).
+		\item Mackenzie, Chapter 2, \textbf{Human Factors},  Human Computer Interaction: An Empirical Research Perspective, 1st ed. (2013) 
+	\end{itemize}
+Also please download \textbf{PEBL} and make sure you have some simple \textbf{spreadsheet} programs for simple graphs generation.
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
