@@ -1,0 +1,82 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+\usetheme[secheader]{Madrid}
+\usecolortheme{seahorse}
+\useinnertheme{circles}
+}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{tikz}
+\usepackage{url}
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\urlstyle{rm}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[HCI and Health]{HCI and Health} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Chaklam Silpasuwanchai} % Your name
+\institute[AIT] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Asian Institute of Technology \\ % Your institution for the title page
+\medskip
+\textit{chaklam@ait.asia} % Your email address
+}
+\date{} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+\AtBeginSection[]
+{
+\begin{frame}<beamer> 
+\tableofcontents[currentsection]  % show TOC and highlight current section
+\end{frame}
+}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Introduction} 
+\begin{itemize}
+	\item \textbf{Health} is one important subdomain of HCI (see \href{https://chi2022.acm.org/for-authors/presenting/papers/selecting-a-subcommittee/} {subcommittees} in CHI)
+	\item Covers \textbf{whole spectrum} of contributions involving health, wellness, including physical, mental, and emotional well-being, clinical environments, self-managements, and everyday wellness.
+	\item The key emphasis is evaluated upon the impact to key \textbf{stakeholders}
+	\item Let's look at some studies, mainly focusing on \textbf{empirical studies} (and less on only questionnaires/interview studies)...
+\end{itemize}
+
+\end{frame}
+
+
+\section{Physiological Computing}
+
+\begin{frame}
+\frametitle{Blood Pressure Monitoring (Wang et al.,  CHI 2018)}
+
+
+\footnote{Wang et al., \textit{Seismo: Blood Pressure Monitoring using Built-in Smartphone Accelerometer and Camera.}  Proc. CHI 2018}
+
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
