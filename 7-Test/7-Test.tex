@@ -72,7 +72,7 @@ Asian Institute of Technology \\ % Your institution for the title page
 
 
 %------------------------------------------------
-\section{Analysis of variance} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{Big Picture} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %-----------------------------------------------
 
 %\begin{frame}
@@ -99,35 +99,138 @@ Asian Institute of Technology \\ % Your institution for the title page
 %	\end{itemize}
 %\end{frame}
 %
-\begin{frame}
-	\frametitle{Analysis of Variance} 
-	\begin{itemize}
-		\item \textbf{ANOVA}, or \textbf{F-test}, is the main statistical test for factorial experiment
-		\item \textbf{\textit{T} test} is similar but only two levels
-		\item The main motivation to use statistical test is - to check that the difference in mean \textbf{occur by chance} or is \textbf{significant}?
-%		\item The way to achieve is to determine whether IV has a significant effect on IV is based on \textbf{variances}
-		\item Some definition: \textbf{Null hypothesis} is an assumption of no difference in mean.  \textbf{One}-way ANOVA refers to \textbf{one} factor; \textbf{two}-way ANOVA to \textbf{two} factors, etc.%- e.g., there is no difference in the mean time between keyboard and mouse. 
-	\end{itemize}
-	
-\end{frame}
+%\begin{frame}
+%	\frametitle{Analysis of Variance} 
+%	\begin{itemize}
+%		\item \textbf{ANOVA}, or \textbf{F-test}, is the main statistical test for factorial experiment
+%		\item \textbf{\textit{T} test} is similar but only two levels
+%		\item The main motivation to use statistical test is - to check that the difference in mean \textbf{occur by chance} or is \textbf{significant}?
+%%		\item The way to achieve is to determine whether IV has a significant effect on IV is based on \textbf{variances}
+%		\item Some definition: \textbf{Null hypothesis} is an assumption of no difference in mean.  \textbf{One}-way ANOVA refers to \textbf{one} factor; \textbf{two}-way ANOVA to \textbf{two} factors, etc.%- e.g., there is no difference in the mean time between keyboard and mouse. 
+%	\end{itemize}
+%	
+%\end{frame}
+
+\subsection{Why test?}
 
 \begin{frame}
 	\frametitle{Why test?}
 \end{frame}
 
-\subsection{One-way with 2 levels}
-
 \begin{frame}
-	\frametitle{Example: One-way with 2 levels} 
-	\begin{figure}
-		\includegraphics[width=0.8\linewidth]{result}
-		\caption{Source: Fg. 6.2 (Mackenzie)}
-	\end{figure}
-	
+	\frametitle{Terminologies }
+	Let's take a oversimplistic case study to understand these terminologies:  IV:  Mouse vs. Gestures and Sitting vs. Standing,  DV:  Speed
+	\begin{itemize}	
+		\item Null hypothesis vs. alternative hypothesis
+		\item p-value
+		\item alpha
+		\item main effect
+		\item interaction effect	
+		\item effect size
+		\item degree of freedom
+%		\item sum of squares (within and between)
+%		\item mean squares
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Example: One-way with 2 levels} 
+	\frametitle{Main effect and Interaction effect} 
+		\begin{figure}
+		\includegraphics[width=0.5\linewidth]{interactions}
+		\caption{Source: Yatani's post-hoc tests}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Which test to use?}
+	\begin{itemize}
+		\item Number of levels
+		\item Between subject vs. within-subject
+		\item Parametric vs. Non-parametric
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Long and wide format}
+	There is a difference in how to format your data between within-subject and between subject
+	
+	\medskip
+	In between subject, we use \rule{1cm}{0.15mm} format.
+	
+	\medskip
+	In within-subject, we use \rule{1cm}{0.15mm} format
+\end{frame}
+
+\begin{frame}
+	\frametitle{Wide format}
+	\begin{figure}
+		\includegraphics[width=0.2\linewidth]{wide-format}
+		\caption{Wide format structure:  Cols depicting possible combinations}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Long format}
+	\begin{figure}
+		\includegraphics[width=0.2\linewidth]{long-format}
+		\caption{Long format structure:  one col for each factor}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Reporting format (APA)} 
+	\begin{itemize}
+		\item If \textbf{significant}, use threshold set {.05, .01, .005, .001, .0005, .0001}.  \textit{p} is cited as \textit{p} $<$ .05 instead of \textit{p} $=$ .0121.   
+		\item If \textbf{not significant though},  say "n.s." instead
+		\item If \textbf{very close to significant}, report exact value.
+		\item Plot with \textbf{standard error bars}
+		\item Report \textbf{mean} and \textbf{std}  (same unit)
+		\item Common nowadays to report\textbf{ effect size}
+		\begin{itemize}
+			\item  \textbf{Effect size}  measures how "strong" is the significance.  SPSS reports \textbf{Partial Eta Squared} ($\eta_{p}^{2}$) - .02 means that the factor X by itself accounted for only 2\% of the overall (effect + error) variance.  Usually around $>0.09$ is considered moderate, while $>0.25$ is large.
+		\end{itemize}
+	%		\item Must \textbf{strictly} follow the exact format for reporting - use parentheses, uppercase for \textit{F}, lowercase for \textit{p}, italics for \textit{F} and \textit{p}, space on both sides of equal sign, space after comma, space on both sides of the less than sign, degrees of freedom are subscript, three/four significant digits for \textit{F} statistics, does not require 0 in front of \textit{p}-value.
+	\end{itemize}
+\end{frame}
+
+\section{Examples: Parametric tests} 
+
+\subsection{One-way with 2 levels with no sig}
+
+\begin{frame}
+	\frametitle{Example: One-way with 2 levels with no sig} 
+	\begin{figure}
+		\includegraphics[width=0.8\linewidth]{resultb}
+		\caption{Source: Fg. 6.6 (Mackenzie)}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Example: One-way with 2 levels with no sig} 
+	\begin{figure}
+		\includegraphics[width=0.55\linewidth]{resultb2}
+		\caption{Source: Fg. 6.7 (Mackenzie). \textit{F} $=$ 4.324/6.904 = .626.  Given \textit{p}-value of .4491, there is around 45\% that the difference occurs by chance.}
+	\end{figure}
+	\begin{figure}
+		\includegraphics[width=0.55\linewidth]{resultb3}
+		\caption{Source: Fg. 6.8 (Mackenzie).  It means that we have not enough evidence to reject null hypothesis}
+	\end{figure}
+\end{frame}
+
+\subsection{One-way with 2 levels with  sig}
+
+%\begin{frame}
+%	\frametitle{Example: One-way with 2 levels} 
+%	\begin{figure}
+%		\includegraphics[width=0.8\linewidth]{result}
+%		\caption{Source: Fg. 6.2 (Mackenzie)}
+%	\end{figure}
+%	
+%\end{frame}
+
+\begin{frame}
+	\frametitle{Example: One-way with 2 levels with sig} 
 	\begin{figure}
 		\includegraphics[width=0.8\linewidth]{resulta}
 		\caption{Source: Fg. 6.3 (Mackenzie)}
@@ -147,60 +250,8 @@ Asian Institute of Technology \\ % Your institution for the title page
 	\end{figure}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Example: One-way with 2 levels with sig} 
-	Reporting format (APA):
-	\begin{itemize}
-		\item If \textbf{significant}, use threshold set {.05, .01, .005, .001, .0005, .0001}.  \textit{p} is cited as \textit{p} $<$ .05 instead of \textit{p} $=$ .0121.   
-		\item If \textbf{not significant though},  say "n.s." instead
-		\item If \textbf{very close to significant}, report exact value.
-		\item Plot with \textbf{standard error bars}
-		\item Report \textbf{mean} and \textbf{std}  (same unit)
-		\item Common nowadays to report\textbf{ effect size}
-		\begin{itemize}
-			\item  \textbf{Effect size}  measures how "strong" is the significance.  SPSS reports \textbf{Partial Eta Squared} ($\eta_{p}^{2}$) - .02 means that the factor X by itself accounted for only 2\% of the overall (effect + error) variance.  Usually around $>0.09$ is considered moderate, while $>0.25$ is large.
-		\end{itemize}
-	%		\item Must \textbf{strictly} follow the exact format for reporting - use parentheses, uppercase for \textit{F}, lowercase for \textit{p}, italics for \textit{F} and \textit{p}, space on both sides of equal sign, space after comma, space on both sides of the less than sign, degrees of freedom are subscript, three/four significant digits for \textit{F} statistics, does not require 0 in front of \textit{p}-value.
-	\end{itemize}
-\end{frame}
 
-\begin{frame}
-	\frametitle{Wide format}
-	Since we are doing a \textbf{within-subject }design, this is also sometimes called \textbf{Repeated Measures ANOVA.}   In RP ANOVA,  it uses \textbf{wide format} data structure.
-	\begin{figure}
-		\includegraphics[width=0.2\linewidth]{wide-format}
-		\caption{Wide format structure:  Cols depicting possible combinations}
-	\end{figure}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Long format}
-	Between-subject ANOVA (or ANOVA) uses \textbf{long format}.
-	\begin{figure}
-		\includegraphics[width=0.2\linewidth]{long-format}
-		\caption{Long format structure:  one col for each factor}
-	\end{figure}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Example: One-way with 2 levels with no sig} 
-	\begin{figure}
-		\includegraphics[width=0.8\linewidth]{resultb}
-		\caption{Source: Fg. 6.6 (Mackenzie)}
-	\end{figure}
-\end{frame}
 %
-\begin{frame}
-	\frametitle{Example: One-way with 2 levels with no sig} 
-	\begin{figure}
-		\includegraphics[width=0.55\linewidth]{resultb2}
-		\caption{Source: Fg. 6.7 (Mackenzie). \textit{F} $=$ 4.324/6.904 = .626.  Given \textit{p}-value of .4491, there is around 45\% that the difference occurs by chance.}
-	\end{figure}
-	\begin{figure}
-		\includegraphics[width=0.55\linewidth]{resultb3}
-		\caption{Source: Fg. 6.8 (Mackenzie).  It means that we have not enough evidence to reject null hypothesis, but it \textbf{does not mean that null hypothesis is true either}.}
-	\end{figure}
-\end{frame}
 
 %\begin{frame}
 %%	\footnotesize
@@ -285,14 +336,6 @@ Asian Institute of Technology \\ % Your institution for the title page
 		\item Interaction effect indicates a \textbf{relational effect} between the IV on the DV
 %		\item If experiment has two factors, three possibilities are possible: 2 factors are both within-subject, or both are between-subject, or one is within and another is between.
 	\end{itemize}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Interaction effects} 
-		\begin{figure}
-		\includegraphics[width=0.5\linewidth]{interactions}
-		\caption{Source: Yatani's post-hoc tests}
-	\end{figure}
 \end{frame}
 
 \begin{frame}
@@ -451,7 +494,7 @@ Asian Institute of Technology \\ % Your institution for the title page
 %\end{frame}
 
 %------------------------------------------------
-\section{Non-parametric tests} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{Examples: Non-parametric tests} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %-----------------------------------------------
 
 \begin{frame}
@@ -461,6 +504,7 @@ Asian Institute of Technology \\ % Your institution for the title page
 		\item Downsides of non-parametric tests are \textbf{loss of information} %while parametric tests works on interval or ratio data, non-parametric tests deal with ordinal data (ranks)
 %		\item Non-parametric tests ignore any property of the scale of data except ordinality
 		\item For example, 49, 81, 82 are transformed to 1, 2, 3
+		\item Also, they cannot be used for more than 1 IV.  That is....you have to do one by one....
 		\item In HCI, non-parametric tests are often used for \textbf{questionnaires data} (e.g., using Likert scale) since they are \textbf{ordinal} data.  %Though non-parametric tests are limited to single factor analysis.
 	\end{itemize}
 \end{frame}
