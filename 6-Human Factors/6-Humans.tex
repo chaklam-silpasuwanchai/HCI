@@ -744,8 +744,330 @@ Better design...
 %\end{frame}
 
 
-\section{Cognition}
+
 	
+\section{Personality}
+
+\begin{frame}
+\frametitle{Personality: Same app, different preferences}
+\small
+Two people use the same fitness app. They want different experiences.
+\medskip
+\begin{columns}[t]
+\begin{column}{0.48\textwidth}
+\begin{block}{``Let me compete.''}
+\begin{itemize}
+\item Share a run with friends.
+\item Join a group challenge.
+\item Compare progress with others.
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{block}{``Let me focus privately.''}
+\begin{itemize}
+\item Keep activity private.
+\item Set a personal goal.
+\item Compare with yesterday's self.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\medskip
+\textbf{Ask:} Which would you prefer? Would your answer change with the situation?
+\medskip
+
+Personality describes broad tendencies. Goals, experience, and context also matter.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Big Five: Five dimensions, not five types}
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}p{2.5cm}p{3.4cm}p{3.4cm}@{}}
+\toprule
+\textbf{Dimension} & \textbf{One end} & \textbf{Other end}\\
+\midrule
+Openness & Prefer familiar approaches & Enjoy new ideas\\
+Conscientiousness & More spontaneous & More organized\\
+Extraversion & More reserved & More outgoing\\
+Agreeableness & More skeptical, competitive & More trusting, cooperative\\
+Negative emotionality & More emotionally steady & More prone to worry\\
+\bottomrule
+\end{tabular}
+\medskip
+
+People fall along each dimension. Neither end is a diagnosis or a measure of worth.
+\vfill
+{\tiny Soto and John (2017), Big Five Inventory--2. Descriptions simplified for teaching.}
+\end{frame}
+
+\begin{frame}
+\frametitle{A profile is more useful than a label}
+\small
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=0.65cm]
+\foreach \y/\label in {5/Openness,4/Conscientiousness,3/Extraversion,2/Agreeableness,1/Negative emotionality} {
+ \node[anchor=east,font=\scriptsize] at (0,\y) {\label};
+ \draw[gray!40,thick] (0.3,\y)--(6.3,\y);
+}
+\foreach \y/\x in {5/4.7,4/5.5,3/1.5,2/4.3,1/2.3}
+ \fill[blue!70!black] (\x,\y) circle (0.10);
+\node[below,font=\scriptsize] at (0.3,0.8) {Lower};
+\node[below,font=\scriptsize] at (6.3,0.8) {Higher};
+\end{tikzpicture}
+\end{center}
+This fictional person is reserved and organized, and enjoys new ideas.
+\medskip
+
+A reserved person may dislike public leaderboards but enjoy sharing privately with close friends.''
+\medskip
+
+\textbf{Ask directly:} ``Would you like to share this activity? With whom?
+\vfill
+{\tiny Illustrative profile, not measured scores. Trait descriptions do not prescribe interface choices.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Surprise: One person can act very differently}
+\small
+Being reserved on average does not mean being quiet in every situation.
+\medskip
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=0.75cm]
+\draw[->] (0,0)--(8.5,0);
+\draw[->] (0,0)--(0,3.3) node[above,font=\scriptsize] {Outgoing behavior};
+\fill[blue!45] (0.8,0) rectangle (2,0.7);
+\fill[blue!45] (3.5,0) rectangle (4.7,2.8);
+\fill[blue!45] (6.2,0) rectangle (7.4,1.6);
+\node[below,align=center,font=\scriptsize] at (1.4,0) {Meeting\\strangers};
+\node[below,align=center,font=\scriptsize] at (4.1,0) {Dinner with\\close friends};
+\node[below,align=center,font=\scriptsize] at (6.8,0) {Helping a\\new colleague};
+\end{tikzpicture}
+\end{center}
+\medskip
+Studies tracking people through daily life found substantial variation within the same person.
+\begin{block}{Remember}
+Personality is a tendency, not a script. Design for the person \textbf{and the situation}.
+\end{block}
+{\tiny Fleeson (2001). Bar heights illustrate a fictional person; they are not study data.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Personality: Design implications}
+\small
+\begin{itemize}
+\item \textbf{Offer meaningful choices:} private goals or optional group challenges.
+\item \textbf{Let users control the experience:} sharing, reminders, and public visibility.
+\item \textbf{Ask preferences directly:} do not infer a personality from a few clicks.
+\item \textbf{Test with different people:} a feature you enjoy may frustrate someone else.
+\end{itemize}
+\begin{block}{Exercise}
+A fitness app automatically publishes every workout. Propose one change for someone who wants privacy and one for someone who enjoys sharing.
+\end{block}
+{\footnotesize Possible answer: private by default, with optional sharing and group challenges.}
+\end{frame}
+
+\section{Motivation}
+
+\begin{frame}
+\frametitle{Motivation: Why would someone keep using it?}
+\small
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{@{}p{2.1cm}p{4.2cm}p{3cm}@{}}
+\toprule
+\textbf{Reason} & \textbf{Everyday example} & \textbf{What drives it?}\\
+\midrule
+Enjoyment & ``I play guitar because it is fun.'' & The activity itself\\
+Personal value & ``I exercise to stay healthy.'' & A valued outcome\\
+External reward & ``I walk to earn shopping points.'' & A separate reward\\
+\bottomrule
+\end{tabular}
+\medskip
+
+\textbf{Intrinsic motivation:} doing an activity for its own enjoyment.
+\medskip
+
+\textbf{Extrinsic motivation:} doing it for a separate outcome. This can be personally valued, not just imposed.
+\vfill
+{\tiny Ryan and Deci (2000). People can have several motives at once.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Three needs that support motivation}
+\small
+Self-Determination Theory: support autonomy, competence, and relatedness.
+\medskip
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[draw=blue!50,fill=blue!7,rounded corners,text width=3cm,align=center,inner sep=8pt] (a) at (0,2)
+{\textbf{Autonomy}\\``I choose to do this.''};
+\node[draw=blue!50,fill=blue!7,rounded corners,text width=3cm,align=center,inner sep=8pt] (b) at (5.2,2)
+{\textbf{Competence}\\``I can improve.''};
+\node[draw=blue!50,fill=blue!7,rounded corners,text width=3cm,align=center,inner sep=8pt] (c) at (2.6,0.3)
+{\textbf{Relatedness}\\``I feel connected.''};
+\draw[gray] (a)--(b)--(c)--(a);
+\end{tikzpicture}
+\end{center}
+\textbf{Ask:} Which need does your favorite game or hobby support?
+\vfill
+{\tiny Ryan and Deci (2000). Relatedness can come from support; it does not require public competition.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example: Make progress visible}
+\small
+\begin{columns}[c]
+\begin{column}{0.43\textwidth}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+\draw[rounded corners,thick,fill=blue!3] (0,0) rectangle (4,4);
+\node[font=\small\bfseries] at (2,3.6) {Your walking goal};
+\node[font=\small] at (2,3.1) {Choose: 10 / 20 / 30 min};
+\draw[rounded corners,fill=gray!15] (0.4,2.3) rectangle (3.6,2.6);
+\fill[blue!55] (0.4,2.3) rectangle (2.8,2.6);
+\node[font=\small] at (2,1.9) {15 of 20 minutes};
+\node[align=center,font=\small,text width=3.3cm] at (2,1.1) {``5 minutes more than\\your last walk!''};
+\node[font=\scriptsize] at (2,0.35) {Invite a friend (optional)};
+\end{tikzpicture}
+\end{column}
+\begin{column}{0.53\textwidth}
+\begin{itemize}
+\item \textbf{Autonomy:} choose a realistic goal.
+\item \textbf{Competence:} see specific progress and useful feedback.
+\item \textbf{Relatedness:} invite a supportive friend if wanted.
+\end{itemize}
+\medskip
+\textbf{Ask:} What happens if the app forces a goal and shames you for missing it?
+\end{column}
+\end{columns}
+\vfill
+{\tiny Illustrative design applying Self-Determination Theory; not an evaluated intervention.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Surprise: A reward can reduce interest}
+\small
+\textbf{Predict:} If someone enjoys drawing, will paying them for every picture always make them want to draw more?
+\medskip
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}p{4.8cm}p{4.8cm}@{}}
+\toprule
+\textbf{Before} & \textbf{After rewards become expected}\\
+\midrule
+``I draw because I enjoy it.'' & ``What do I get for drawing?''\\
+\bottomrule
+\end{tabular}
+\medskip
+
+A review of 128 experiments found that expected tangible rewards could reduce later voluntary engagement in already interesting activities.
+\medskip
+
+This does \textbf{not} mean all rewards are harmful. Reward type, feedback, and context matter.
+\begin{block}{Remember}
+More rewards do not automatically mean more motivation. Build interest and competence, not only points.
+\end{block}
+{\tiny Deci, Koestner, and Ryan (1999). Dialogue illustrates the mechanism, not a study quotation.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Gamification: Borrow ideas from games}
+\small
+Gamification uses game-design elements in activities that are not games.
+\medskip
+\begin{columns}[c]
+\begin{column}{0.43\textwidth}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+\draw[rounded corners,thick,fill=blue!3] (0,0) rectangle (4,3.8);
+\node[font=\small\bfseries] at (2,3.4) {Today's language quest};
+\node[font=\small] at (2,2.9) {Recall five new words};
+\foreach \x in {0.7,1.35,2,2.65,3.3}
+ \draw[fill=blue!15,draw=blue!50] (\x,2.2) circle (0.22);
+\foreach \x in {0.7,1.35,2}
+ \fill[blue!65] (\x,2.2) circle (0.22);
+\node[font=\small] at (2,1.6) {3 of 5 completed};
+\node[fill=yellow!25,rounded corners,inner sep=6pt] at (2,0.9) {+10 practice points};
+\node[font=\scriptsize] at (2,0.3) {Next: a short conversation};
+\end{tikzpicture}
+\end{column}
+\begin{column}{0.53\textwidth}
+\begin{itemize}
+\item \textbf{Quest:} a clear, achievable challenge.
+\item \textbf{Progress:} see how far you have come.
+\item \textbf{Points or badges:} mark achievements.
+\item \textbf{Levels:} introduce harder tasks as skills grow.
+\end{itemize}
+\end{column}
+\end{columns}
+\medskip
+\textbf{Ask:} Are users learning words, or only collecting points?
+\vfill
+{\tiny Deterding et al. (2011). Interface is an illustrative example.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Why might game elements motivate?}
+\small
+Start with the psychological need, then choose a feature.
+\medskip
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}p{2cm}p{3.5cm}p{4cm}@{}}
+\toprule
+\textbf{Need} & \textbf{Possible feature} & \textbf{What users experience}\\
+\midrule
+Autonomy & Choose a quest or difficulty & ``I decide how to participate.''\\
+Competence & Levels and useful progress feedback & ``I can see myself improving.''\\
+Relatedness & Optional team challenges & ``We support each other.''\\
+\bottomrule
+\end{tabular}
+\begin{block}{Remember}
+Points do not automatically create motivation. The experience behind the feature matters.
+\end{block}
+{\tiny Ryan and Deci (2000); Sailer et al. (2017). These are design possibilities, not guaranteed effects.}
+\end{frame}
+
+\begin{frame}
+\frametitle{The same feature can encourage or pressure}
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}p{1.7cm}p{3.9cm}p{3.9cm}@{}}
+\toprule
+\textbf{Feature} & \textbf{Can support} & \textbf{Can create problems}\\
+\midrule
+Streak & A regular practice routine & Fear of losing progress after a missed day\\
+Leaderboard & Friendly, optional competition & Discouragement for people near the bottom\\
+Points & Feedback on meaningful practice & Repeating easy actions just to earn points\\
+\bottomrule
+\end{tabular}
+\medskip
+\textbf{Design implications:} allow rest and recovery, make competition optional, and reward meaningful progress.
+\medskip
+
+\textbf{Test the real goal:} compare later word recall, enjoyment, and pressure---not only clicks or daily visits.
+\vfill
+{\tiny Illustrative benefits and risks to investigate; Sailer et al. (2017) shows effects differ across elements.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Motivation: Design implications}
+\small
+\begin{itemize}
+\item \textbf{Support choice:} let users set goals and adjust reminders.
+\item \textbf{Support improvement:} give achievable steps and specific feedback.
+\item \textbf{Support connection:} offer helpful social features without forcing comparison.
+\item \textbf{Look beyond points:} measure whether users achieve goals they value.
+\end{itemize}
+\begin{block}{Exercise}
+A language app says: ``Miss today and lose your 100-day streak!'' Rewrite it to offer a manageable next step without guilt.
+\end{block}
+{\footnotesize Possible answer: ``Have two minutes? Practice five words, or choose a better time.''}
+\vfill
+{\tiny Design suggestions informed by Ryan and Deci (2000); effects depend on context.}
+\end{frame}
+
+\section{Cognition}
+
 \subsection{Attention}
 
 \begin{frame}
@@ -1100,18 +1422,305 @@ Better design...
 	\end{itemize}
 \end{frame}
 
+% \begin{frame}
+% 	\frametitle{Human decisions are rarely rational}
+% 	Kahneman and Tversky: Fourfold Pattern \vfill
+% 	\centering
+% 	\includegraphics[width=0.8\linewidth]{image/fourfold}
+% 	\begin{itemize}
+% 		\item TL - eye surgery with 95\% success but afraid of eye loss
+% 		\item TR - desperate investment with 95\% failure but still do it
+% 		\item BL - only 5\% chance to win \textbf{lottery} but still do it
+% 		\item BR - only 5\% chance to lose, but get \textbf{insurance}
+% 	\end{itemize}
+% \end{frame}
+
 \begin{frame}
-	\frametitle{Human decisions are rarely rational}
-	Kahneman and Tversky: Fourfold Pattern \vfill
-	\centering
-	\includegraphics[width=0.8\linewidth]{image/fourfold}
-	\begin{itemize}
-		\item TL - eye surgery with 95\% success but afraid of eye loss
-		\item TR - desperate investment with 95\% failure but still do it
-		\item BL - only 5\% chance to win \textbf{lottery} but still do it
-		\item BR - only 5\% chance to lose, but get \textbf{insurance}
-	\end{itemize}
+    \frametitle{1. Anchoring bias}
+    \small
+    The first number we see can influence our judgment.
+    \medskip
+    \begin{columns}[c]
+    \begin{column}{0.44\textwidth}
+    \centering
+    \begin{tikzpicture}[x=1cm,y=1cm]
+        \draw[rounded corners,fill=blue!5,draw=blue!40] (0,0) rectangle (4.3,3.8);
+        \node at (2.15,3.35) {\textbf{Monthly subscription}};
+        \node[text=gray] at (2.15,2.65) {Was 2,000 baht};
+        \draw[gray,thick] (0.9,2.65)--(3.4,2.65);
+        \node[text=blue!70!black,font=\Large\bfseries] at (2.15,1.85) {900 baht};
+        \node at (2.15,1.25) {per month};
+        \node[fill=blue!20,rounded corners,inner sep=7pt] at (2.15,0.55) {Subscribe};
+    \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.52\textwidth}
+        \textbf{Ask:} Is 900 baht good value, or does it just look cheap compared with 2,000?
+        \medskip
+        \begin{itemize}
+            \item The original price becomes an \textbf{anchor}.
+            \item We may give it too much weight when judging value.
+        \end{itemize}
+    \end{column}
+    \end{columns}
+    \begin{block}{Design implication}
+        Help users compare features, total costs, and alternatives.
+    \end{block}
+    {\tiny Illustrative interface. Tversky and Kahneman (1974).}
 \end{frame}
+
+\begin{frame}
+    \frametitle{2. Confirmation bias}
+    \small
+    We tend to favor evidence that supports what we already believe.
+    \medskip
+    \begin{columns}[c]
+    \begin{column}{0.44\textwidth}
+    \centering
+    \begin{tikzpicture}[x=1cm,y=1cm]
+
+        \node[align=center,text width=4cm] at (2.1,3.5)
+        {\textbf{``Brand A makes the best phones.''}};
+        \draw[rounded corners,fill=blue!5,draw=blue!40] (0.25,0.25) rectangle (3.95,2.8);
+        \node at (2.1,2.4) {\textbf{Phone reviews}};
+        \node[fill=green!15,rounded corners,inner sep=7pt] at (2.1,1.65) {``Great camera!''};
+        \node[text=gray] at (2.1,0.85) {``Battery runs out quickly.''};
+
+    \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.52\textwidth}
+
+        You already love Brand A.
+        \medskip
+
+        You trust the positive review, but dismiss the negative one:
+        \begin{quote}
+        ``They probably used it wrong.''
+        \end{quote}
+        \textbf{Ask:} Would you judge the same reviews differently for another brand?
+
+    \end{column}
+    \end{columns}
+    \begin{block}{Design implication}
+Help users compare the same criteria across products. In user testing, actively seek evidence against your own design.
+    \end{block}
+    {\tiny Illustrative scenario. Nickerson (1998).}
+\end{frame}
+
+\begin{frame}
+    \frametitle{3. Availability bias}
+    \small
+    Events that are easy to remember can seem more common than they are.
+    \medskip
+    \begin{columns}[c]
+    \begin{column}{0.44\textwidth}
+    \centering
+    \begin{tikzpicture}[x=1cm,y=1cm]
+
+        \draw[rounded corners,fill=orange!10,draw=orange!70!black] (0.2,1.5) rectangle (4,3.4);
+        \node at (2.1,3) {\textbf{BREAKING NEWS}};
+        \node[align=center,text width=3.3cm] at (2.1,2.25) {Dramatic footage\\of a plane accident};
+        \draw[->,thick] (2.1,1.4)--(2.1,0.85);
+        \node[align=center,text width=4cm] at (2.1,0.35) {``Flying feels dangerous.''};
+
+    \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.52\textwidth}
+
+        You see repeated footage of a plane accident.
+        \medskip
+
+        Before your next flight, accidents suddenly feel very likely---without checking how often they occur.
+        \medskip
+
+        \textbf{Ask:} Is the risk high, or is the image easy to recall?
+
+    \end{column}
+    \end{columns}
+    \begin{block}{Design implication}
+When showing risks, provide frequencies and context alongside vivid stories or alerts.
+    \end{block}
+    {\tiny Illustrative scenario. Tversky and Kahneman (1974).}
+\end{frame}
+
+\begin{frame}
+    \frametitle{4. Loss aversion}
+    \small
+    A loss can feel more significant than an equivalent gain, depending on the context.
+    \medskip
+    \begin{columns}[c]
+    \begin{column}{0.44\textwidth}
+    \centering
+    \begin{tikzpicture}[x=1cm,y=1cm]
+
+        \node[draw=green!50!black,fill=green!10,rounded corners,text width=3.3cm,
+        align=center,inner sep=9pt] at (2.1,2.85)
+        {Find money\\\Large\textbf{+500 baht}};
+        \node[draw=orange!80!black,fill=orange!15,rounded corners,text width=3.3cm,
+        align=center,inner sep=9pt] at (2.1,1.1)
+        {Lose money\\\Large\textbf{--500 baht}};
+
+    \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.52\textwidth}
+
+        Imagine finding 500 baht in an old jacket.
+        \medskip
+
+        Now imagine losing 500 baht from your wallet.
+        \medskip
+
+        \textbf{Ask:} Which feeling would be stronger?
+        \medskip
+
+        The loss may hurt more than the equal gain feels good.
+
+    \end{column}
+    \end{columns}
+    \begin{block}{Design implication}
+Make changes reversible: offer undo, backups, and previews so users can explore without risking their work.
+    \end{block}
+    {\tiny Illustrative scenario. Kahneman, Knetsch, and Thaler (1991).}
+\end{frame}
+
+\begin{frame}
+    \frametitle{5. Sunk-cost fallacy}
+    \small
+    Past spending can push us to continue something that is no longer worthwhile.
+    \medskip
+    \begin{columns}[c]
+    \begin{column}{0.44\textwidth}
+    \centering
+    \begin{tikzpicture}[x=1cm,y=1cm]
+\node[align=center,font=\small\bfseries] at (2.1,3.6) {300 baht already paid};
+\node[draw,rounded corners,fill=blue!7,text width=3.4cm,align=center,inner sep=8pt] at (2.1,2.55)
+{\textbf{Stay}\\Spend another hour\\on a boring movie};
+\node[draw,rounded corners,fill=green!10,text width=3.4cm,align=center,inner sep=8pt] at (2.1,0.95)
+{\textbf{Leave}\\Use that hour\\for something you enjoy};
+\end{tikzpicture}
+    \end{column}
+    \begin{column}{0.52\textwidth}
+You stay because ``I already paid for it.''
+\medskip
+
+The ticket money is gone whether you stay or leave.
+\medskip
+
+\textbf{Ask:} Is watching the rest worth another hour of your time?
+    \end{column}
+    \end{columns}
+    \begin{block}{Design implication}
+When reviewing a design, judge future benefits and costs. Months already spent building it are not a reason to keep a poor solution.
+    \end{block}
+    {\tiny Arkes and Blumer (1985).}
+\end{frame}
+
+\begin{frame}
+    \frametitle{6. Dunning--Kruger effect}
+    \small
+    Limited skill in a task can make it difficult to recognize your own mistakes.
+    \medskip
+    \begin{center}
+\begin{tikzpicture}[x=1cm,y=0.75cm]
+\draw[->] (0,0)--(9.8,0) node[right,font=\scriptsize] {Learning};
+\draw[->] (0,0)--(0,3.65);
+\node[rotate=90,font=\scriptsize] at (-0.45,1.8) {Confidence};
+\draw[very thick,blue!70!black] (0.2,0.45) .. controls (0.6,0.6) and (0.65,3.1) .. (1.35,3.1)
+ .. controls (2.1,3.1) and (2.3,0.65) .. (3.6,0.65)
+ .. controls (5.3,0.65) and (6.1,2.4) .. (9,2.55);
+\node[align=center,font=\scriptsize] at (1.5,3.8) {``I know this!''};
+\node[align=center,font=\scriptsize] at (3.8,1.6) {``There is more\\than I thought.''};
+\node[align=center,font=\scriptsize] at (7.7,3.35) {``I know a lot,\\and I know my limits.''};
+\node[below,font=\scriptsize] at (1,0) {Beginner};
+\node[below,font=\scriptsize] at (8.5,0) {More experience};
+\end{tikzpicture}
+\end{center}
+{\scriptsize Popular learning-journey sketch, not measured data or the original Dunning--Kruger graph.}
+\medskip
+
+\textbf{Key point:} Confidence is not proof of skill. Expertise can bring both confidence and awareness of limits.
+
+    \begin{block}{Design implication}
+Provide practice, clear criteria, and feedback. Test actual task performance instead of relying only on self-rated confidence.
+    \end{block}
+    {\tiny Kruger and Dunning (1999): self-assessment study, not a universal learning trajectory.}
+\end{frame}
+
+\begin{frame}
+    \frametitle{7. Survivorship bias}
+    \small
+    We can reach misleading conclusions when we only see the successes.
+    \medskip
+    \begin{columns}[c]
+    \begin{column}{0.44\textwidth}
+    \centering
+    \begin{tikzpicture}[x=1cm,y=1cm]
+\fill[yellow!20] (2.1,3.7)--(0.6,0.7)--(3.6,0.7)--cycle;
+\foreach \x in {0.5,1.3,2.1,2.9,3.7} {
+ \foreach \y in {0.6,1.6} {
+  \fill[gray!40] (\x,\y+0.3) circle (0.12);
+  \draw[gray!50,very thick] (\x,\y+0.12)--(\x,\y-0.2);
+ }
+}
+\fill[blue!70!black] (2.1,2.8) circle (0.17);
+\draw[blue!70!black,line width=3pt] (2.1,2.6)--(2.1,2.05);
+\node[font=\scriptsize,align=center] at (2.1,3.55) {One famous success};
+\node[font=\scriptsize,align=center] at (2.1,-0.1) {Other outcomes stay out of view};
+\end{tikzpicture}
+    \end{column}
+    \begin{column}{0.52\textwidth}
+``Successful founders dropped out, so dropping out must help you succeed.''
+\medskip
+
+This ignores people who made the same choice and did not succeed.
+\medskip
+
+\textbf{Ask:} Whose experience is missing?
+    \end{column}
+    \end{columns}
+    \begin{block}{Design implication}
+Include people who abandoned your app or failed to finish a task. Interviewing only active users misses important problems.
+    \end{block}
+    {\tiny Conceptual illustration, not counts. Success stories alone do not establish cause.}
+\end{frame}
+
+\begin{frame}
+    \frametitle{8. Affect heuristic}
+    \small
+    We use feelings as a shortcut when judging benefits and risks.
+    \medskip
+    \begin{columns}[c]
+    \begin{column}{0.44\textwidth}
+    \centering
+    \begin{tikzpicture}[x=1cm,y=1cm]
+\draw[rounded corners,thick,fill=black!5] (0.6,0) rectangle (3.6,4.1);
+\fill[cyan!15] (0.8,1.5) rectangle (3.4,3.65);
+\fill[cyan!45] (0.8,1.5) rectangle (3.4,2.65);
+\fill[yellow!30] (0.8,1.5)--(3.4,1.5)--(3.4,2.05) .. controls (2.5,2.5) and (1.8,1.8) .. (0.8,2.15)--cycle;
+\fill[yellow!80!orange] (2.85,3.2) circle (0.25);
+\node[font=\small\bfseries] at (2.1,3.85) {Dream escape};
+\node[fill=blue!65!black,text=white,rounded corners,inner sep=6pt] at (2.1,1.08) {Book now};
+\node[font=\tiny,text=gray] at (2.1,0.5) {Seller? Fees? Cancellation?};
+\end{tikzpicture}
+    \end{column}
+    \begin{column}{0.52\textwidth}
+You feel excited about a holiday and like the booking app.
+\medskip
+
+You assume the booking is safe before checking the seller or cancellation terms.
+\medskip
+
+\textbf{Ask:} What evidence supports that feeling?
+    \end{column}
+    \end{columns}
+    \begin{block}{Design implication}
+Make fees, cancellation terms, and seller information easy to check. Attractive presentation should support informed decisions.
+    \end{block}
+    {\tiny Slovic et al. (2007).}
+\end{frame}
+
+
+
+
 
 \begin{frame}
 	\frametitle{Human decisions are rarely rational}
@@ -1162,24 +1771,70 @@ Better design...
 %		\end{block}
 %\end{frame}
 
+% \begin{frame}
+% 	\frametitle{Activities}
+% 	\footnotesize
+% 	\begin{block}{Classwork}
+% 	\begin{itemize}
+% 	\item Download latest PEBL from \url{http://pebl.sourceforge.net/download.html}
+% 	\item Perform the Muller-Lyer experiment 2 times.   Combine the two csv files into one and perform analysis using any tool,  e.g., Excel.
+% 	\item Attempt to think of \textbf{three} research questions,  \textbf{three} corresponding hypotheses, and perform \textbf{analysis}.  Finally make a \textbf{50} words conclusion for \textbf{each} question.
+% 	\end{itemize}
+% %		- Does people get better after practice? That is, can humans improve their raw visual skills by practicing?
+% %		
+% %		- Does users who press faster tend to make more errors? 
+% %		
+% %		- How does the differences in length affect error rates?  
+		
+% The challenge is to think what are good scientific questions, and do proper analysis.  Make sure all graphs have standard bar errors.
+		
+% 	\end{block}
+% \end{frame}
+
 \begin{frame}
-	\frametitle{Activities}
-	\footnotesize
-	\begin{block}{Classwork}
-	\begin{itemize}
-	\item Download latest PEBL from \url{http://pebl.sourceforge.net/download.html}
-	\item Perform the Muller-Lyer experiment 2 times.   Combine the two csv files into one and perform analysis using any tool,  e.g., Excel.
-	\item Attempt to think of \textbf{three} research questions,  \textbf{three} corresponding hypotheses, and perform \textbf{analysis}.  Finally make a \textbf{50} words conclusion for \textbf{each} question.
-	\end{itemize}
-%		- Does people get better after practice? That is, can humans improve their raw visual skills by practicing?
-%		
-%		- Does users who press faster tend to make more errors? 
-%		
-%		- How does the differences in length affect error rates?  
-		
-The challenge is to think what are good scientific questions, and do proper analysis.  Make sure all graphs have standard bar errors.
-		
-	\end{block}
+    \frametitle{Activities: Investigate one SIS task}
+    \small
+    Visit \url{http://sis.ait.ac.th}. Choose one task, such as
+    finding a course or checking a registration deadline.
+    \begin{block}{1. Walk through the task}
+    Note where users might struggle. Use these questions:
+    \begin{itemize}
+        \item \textbf{Perception and memory:} What is hard to notice,
+        read, understand, or remember?
+        \item \textbf{Personality and motivation:} Are useful choices
+        available? Are progress and next steps clear?
+        \item \textbf{Cognition:} What is hard to learn? Where could
+        users miss information or make a mistaken decision?
+    \end{itemize}
+    \end{block}
+    \begin{block}{2. Choose five improvements}
+    Use \textbf{at least three lecture topics} across your five fixes.
+    Choose concepts that explain the problems you find; you do not
+    need to use every topic or add gamification.
+    \end{block}
+    {\footnotesize Describe likely difficulties as predictions unless you have observed users experiencing them.}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Activities: Explain and test your fixes}
+    \small
+    Submit \textbf{five pages, one improvement per page}.
+    State your chosen task at the top of the first page.
+    \begin{enumerate}
+        \item \textbf{Problem:} Annotate a screenshot. Explain
+        what might go wrong during the task.
+        \item \textbf{Concept:} Name a relevant lecture concept
+        and explain how it accounts for the difficulty.
+        \item \textbf{Fix:} Sketch your change and explain why it helps.
+        \item \textbf{Check:} Propose one task and one outcome
+        to compare before and after. No experiment is required.
+    \end{enumerate}
+    \begin{block}{Example: A deadline is easy to miss}
+    \textbf{Attention:} The deadline blends into unrelated dates.
+    \textbf{Fix:} Put it beside the registration action with a clear label.
+    \textbf{Check:} Ask users to find the deadline; compare correct answers.
+    \end{block}
+    {\footnotesize Aim for clear reasoning and useful changes, not the number of theory names.}
 \end{frame}
 %
 %\begin{frame}
