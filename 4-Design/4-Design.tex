@@ -16,6 +16,8 @@
 \setbeamerfont{subsection in sidebar}{size=\fontsize{3}{5}\selectfont}
 \setbeamerfont{subsubsection in sidebar}{size=\fontsize{2}{4}\selectfont}
 
+\usepackage{tcolorbox}
+
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -339,12 +341,12 @@ Never a commercial success.....why?
 \begin{frame}
 \frametitle{Why design is hard?}
 \begin{itemize}
-	\item Design is hard because of \textbf{tradeoffs}
+	\item Design is hard because of \rule{2cm}{0.15mm}
 	\begin{itemize}
 		\item Top designers know what makes design good, but the problem is that you cannot always take all the good things
 		\item Common \textbf{tradeoffs} - e.g., security vs convenience? familiarity vs. cool new experience? speed vs accuracy? customizability vs. learnability?
 	\end{itemize}
-	\item Design is hard because of \textbf{context}
+	\item Design is hard because of \rule{2cm}{0.15mm}
 	\begin{itemize}
 		\item Context of use - which tasks the tools/systems are being used
 		\item Expertise - novice vs. experts
@@ -359,7 +361,7 @@ Never a commercial success.....why?
 \begin{frame}
 \frametitle{Why design is hard?}
 \begin{itemize}
-\item Design is hard because of \textbf{human nature}
+\item Design is hard because of \rule{2cm}{0.15mm}
 \begin{itemize}
 	\item Human \textbf{perception} is flawed
 	\item Human \textbf{attention span} is limited
@@ -369,7 +371,7 @@ Never a commercial success.....why?
 \end{itemize}
 \end{itemize}
 \begin{itemize}
-\item Design is hard because of \textbf{engineer nature}
+\item Design is hard because of \rule{2cm}{0.15mm}
 \begin{itemize}
 	\item Engineer usually assumes users are same as him/her
 	\item Engineer usually interested in solving technical challenge
@@ -386,7 +388,7 @@ Never a commercial success.....why?
 	\item \textbf{Don't assume} people will read, learn, think, or care
 	\item Embrace \textbf{diversity} - aged, blind, left-handed, experienced,  lang. etc.
 	\item  \textbf{Rapid prototyping and failure}
-	\item \textbf{Interview} but NOT follow
+	\item \textbf{Interview} but NOT blindly follow
 	\item NOT making it \textbf{simpler} nor \textbf{minimal} nor \textbf{ looking/feeling good} or \textbf{high-tech},  they are secondary.  Primary is about \rule{2cm}{0.15mm}
 	\item Do \textbf{quantitative} user evaluation; don't argue
 	\item Use \textbf{design principles}
@@ -452,7 +454,7 @@ Never a commercial success.....why?
 \begin{frame}
 	\frametitle{Affordance}
 	\centering
-	\includegraphics[width=0.8\linewidth]{orion}
+	\includegraphics[width=0.8\linewidth]{hangs}
 \end{frame}
 
 %\begin{frame}
@@ -488,6 +490,12 @@ Never a commercial success.....why?
 \centering
 Bad affordance also exists!  How many times did your family members put something on top of this similar machine?
 \includegraphics[width=0.5\linewidth]{badaffordance1}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bad affordance}
+\centering
+\includegraphics[width=0.5\linewidth]{clotheshang}
 \end{frame}
 %
 %\subsection{Signifiers}
@@ -583,7 +591,7 @@ Bad affordance also exists!  How many times did your family members put somethin
 \frametitle{Constraints}
 \centering
 \begin{figure}
-	\includegraphics[width=0.6\linewidth]{usb}
+	\includegraphics[width=0.6\linewidth]{datepickers}
 \end{figure}
 \end{frame}
 
@@ -593,19 +601,17 @@ Bad affordance also exists!  How many times did your family members put somethin
 \includegraphics[width=0.3\linewidth]{constraint1}
 \end{frame}
 
-
-
 \begin{frame}
 \frametitle{Constraints}
 \centering
 \includegraphics[width=0.7\linewidth]{battery}
 \end{frame}
 
-%\begin{frame}
-%\frametitle{Constraints}
-%\centering
-%\includegraphics[width=0.3\linewidth]{constraint3}
-%\end{frame}
+\begin{frame}
+\frametitle{Constraints}
+\centering
+\includegraphics[width=0.3\linewidth]{constraint3}
+\end{frame}
 %
 %\begin{frame}
 %\frametitle{Constraints}
@@ -967,21 +973,34 @@ Conventions are cultural constraints.  They are initially arbitrary, but evolve 
 %\end{center}
 %\end{frame}
 
+% \begin{frame}
+% 	\frametitle{Activities}
+% 	\begin{block}{Design Workshop}
+% 	\centering
+% 	\includegraphics[width=.5\linewidth]{elevator_bt}
+% 	\begin{itemize}
+% 		\item Attempt to redesign the elevator buttons so to \textit{minimize} people accidentally closing the door.
+% %		\item Submit a screenshot and roughly 300 words arguing why you think your design will solve the problem to Google Classroom. 
+% 	\end{itemize}
+% %		Put these design considerations in your design:\\
+% %1. People "loves" familiar design\\
+% %2. Not all people know English.  Reading also takes time!\\
+% %3. What color should be the button of Open and Close?  Does color even matters?
+% 	\end{block}
+% \end{frame}
+
 \begin{frame}
-	\frametitle{Activities}
-	\begin{block}{Design Workshop}
-	\centering
-	\includegraphics[width=.5\linewidth]{elevator_bt}
-	\begin{itemize}
-		\item Attempt to redesign the elevator buttons so to \textit{minimize} people accidentally closing the door.
-%		\item Submit a screenshot and roughly 300 words arguing why you think your design will solve the problem to Google Classroom. 
-	\end{itemize}
-%		Put these design considerations in your design:\\
-%1. People "loves" familiar design\\
-%2. Not all people know English.  Reading also takes time!\\
-%3. What color should be the button of Open and Close?  Does color even matters?
-	\end{block}
+  \frametitle{Activities}
+    \begin{tcolorbox}[colback=blue!10, colframe=blue!50!black, title=Design Workshop]    \begin{center}
+      \includegraphics[width=.5\linewidth]{elevator_bt}
+    \end{center}
+
+    \begin{itemize}
+      \item Attempt to redesign the elevator buttons so to \textit{minimize} people accidentally closing the door.
+    \end{itemize}
+  \end{tcolorbox}
 \end{frame}
+
 
 \begin{frame}
 	\frametitle{Discussion}
@@ -1012,42 +1031,42 @@ Conventions are cultural constraints.  They are initially arbitrary, but evolve 
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Mental Models}
-\centering
-\begin{figure}
-	\includegraphics[width=0.6\linewidth]{model}
-	\caption{Source: Fg 1.8 (Norman)}
-\end{figure}
-\vspace{-10pt}
-\begin{itemize}
-	\item When users have incorrect mental models, your design fails
-	\item \textbf{Watch}: There are five buttons.  There are \textbf{affordances} of buttons but it does not \textbf{signifies} what to do.  There are also no clear \textbf{mappings} between functions and buttons.   \textbf{Constraints} are also not applied properly - each button can be pressed or hold or press twice, none of which are explained clearly.   Only way to use this watch is to read the manual....too bad
-\end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Mental Models}
+% \centering
+% \begin{figure}
+% 	\includegraphics[width=0.6\linewidth]{model}
+% 	\caption{Source: Fg 1.8 (Norman)}
+% \end{figure}
+% \vspace{-10pt}
+% \begin{itemize}
+% 	\item When users have incorrect mental models, your design fails
+% 	\item \textbf{Watch}: There are five buttons.  There are \textbf{affordances} of buttons but it does not \textbf{signifies} what to do.  There are also no clear \textbf{mappings} between functions and buttons.   \textbf{Constraints} are also not applied properly - each button can be pressed or hold or press twice, none of which are explained clearly.   Only way to use this watch is to read the manual....too bad
+% \end{itemize}
+% \end{frame}
 
 
-\begin{frame}
-\frametitle{Mental Models}
-\centering
-\begin{figure}
-	\includegraphics[width=0.6\linewidth]{model2}
-	\caption{Source: Fg 1.9 (Norman)}
-\end{figure}
-\vspace{-10pt}
-\begin{itemize}
-	\item \textbf{Refrigerator}: If the freezer is too cold, what you will do?
-\end{itemize}
-\end{frame}
+% \begin{frame}
+% \frametitle{Mental Models}
+% \centering
+% \begin{figure}
+% 	\includegraphics[width=0.6\linewidth]{model2}
+% 	\caption{Source: Fg 1.9 (Norman)}
+% \end{figure}
+% \vspace{-10pt}
+% \begin{itemize}
+% 	\item \textbf{Refrigerator}: If the freezer is too cold, what you will do?
+% \end{itemize}
+% \end{frame}
 
-\begin{frame}
-\frametitle{Mental Models}
-\centering
-\begin{figure}
-	\includegraphics[width=0.7\linewidth]{model3}
-	\caption{Source: Fg 1.10 (Norman)}
-\end{figure}
-\end{frame}
+% \begin{frame}
+% \frametitle{Mental Models}
+% \centering
+% \begin{figure}
+% 	\includegraphics[width=0.7\linewidth]{model3}
+% 	\caption{Source: Fg 1.10 (Norman)}
+% \end{figure}
+% \end{frame}
 
 %\begin{frame}
 %\frametitle{Mental Models}
@@ -1180,17 +1199,83 @@ Conventions are cultural constraints.  They are initially arbitrary, but evolve 
 	\end{itemize}
 \end{frame}
 
-%\subsection{Three Levels of Processing}
-%
-%\begin{frame}
-%\frametitle{Three Levels of Processing}
-%Three levels of emotional-cognitive processing:
-%	\begin{enumerate}
-%		\item \textbf{Visceral} - the quick, automatic, and subconscious judgments; the first impression; the immediate perception; minimal learning involve. Linked with motor systems (fight or flee).  Design aesthetics drive these responses.
-%		\item \textbf{Behavioral} - relates to experience when performing actions and every action is associated with an expectation  Most action in this level is subconscious.  %A state \textbf{flow} happens when challenge of activity just slightly exceeds our skill.%
-%		\item \textbf{Reflective} - relates to home of conscious cognition.  This is your experience after conscious reasoning.  Highest levels of emotions comes from this level.    %Emotion and cognition are tightly intertwined 
-%	\end{enumerate}
-%\end{frame}
+\subsection{Three Levels of Processing}
+
+\begin{frame}
+\frametitle{Three Levels of Processing}
+Three levels of emotional-cognitive processing:
+	\begin{enumerate}
+		\item \textbf{Visceral} - the quick, automatic, and subconscious judgments; the first impression; the immediate perception; minimal learning involve. Linked with motor systems (fight or flee).  Design aesthetics drive these responses.
+		\item \textbf{Behavioral} - relates to experience when performing actions and every action is associated with an expectation  Most action in this level is subconscious.  %A state \textbf{flow} happens when challenge of activity just slightly exceeds our skill.%
+		\item \textbf{Reflective} - relates to home of conscious cognition.  This is your experience after conscious reasoning.  Highest levels of emotions comes from this level.    %Emotion and cognition are tightly intertwined 
+	\end{enumerate}
+\end{frame}
+
+\subsection{Nielsen’s 10 Usability Heuristics}
+
+\begin{frame}
+\frametitle{Nielsen’s 10 Usability Heuristics}
+\footnotesize
+    \begin{enumerate}
+        \item \textbf{Visibility of System Status:} Keep users informed (e.g., loading spinners)
+        \item \textbf{Match with the Real World:} Use familiar language, concepts (e.g., trash can icon for delete)
+        \item \textbf{User Control and Freedom:} Allow undo/redo, easy exits (e.g., Cancel button)
+        \item \textbf{Consistency and Standards:} Keep interface behavior uniform
+        \item \textbf{Error Prevention:} Prevent problems before they occur (e.g., disable Submit until required fields filled)
+        \item \textbf{Recognition Rather Than Recall:} Minimize memory load (e.g., autocomplete suggestions)
+        \item \textbf{Flexibility and Efficiency:} Support novices & experts (e.g., keyboard shortcuts)
+        \item \textbf{Aesthetic and Minimalist Design:} Avoid unnecessary info (e.g., clean login screen)
+        \item \textbf{Help Users Recover from Errors:} Clear, constructive messages (e.g., password guidance)
+        \item \textbf{Help and Documentation:} Provide accessible guidance (e.g., FAQ, tooltips)
+    \end{enumerate}
+\end{frame}
+
+
+\subsection{Design Thinking}
+
+\begin{frame}
+\frametitle{Design Thinking}
+Design Thinking: empathize, define, ideate, prototype, test
+\begin{enumerate}
+    \item Many people assume empathizing means interviews and surveys. \textit{ It's totally wrong!}
+    \item Users often don’t know what they truly want; context matters; behavior is more reliable than stated preferences.
+    \item \textbf{Interviews} are useful to uncover frustrations, motivations, and rationale—but rarely reveal the root cause.
+    \item \textbf{Surveys} can explore phenomena but are weak for confirming deeper insights.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Design Thinking}
+The most powerful step of design thinking is \textbf{observation}. It gives you real human insight.   It reveals the root causes.
+\begin{figure}
+    \includegraphics[width=0.9\linewidth]{designthinking}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Design Thinking}
+People who are successful in design thinking are often:
+\begin{itemize}
+    \item Realize their own possible \textbf{cognitive biases}
+    \item Use \textbf{first principle thinking} - challenge the assumptions and asking lot of whys
+    \item Use \textbf{reframing technique} - changing the questions to be asked
+    \item Use lots of \textbf{observation}
+    \item \textbf{Combines lots of ideas} that does not seem it links
+    \item Embrace experimentation and \textbf{rapid prototyping} to test ideas - the question is how to setup quickest experiments to know the idea is bad
+\end{itemize}
+\end{frame}
+
+% \subsection{Flow Theory}
+
+% \begin{frame}
+% \frametitle{Flow Theory}
+% Humans achieve a state of flow when
+%     \begin{enumerate}
+% 		\item Challenges are just slightly above humans' skills
+% 		\item Clear goals
+% 		\item Immediate feedback
+% 	\end{enumerate}
+% \end{frame}
 %
 %\begin{frame}
 %\frametitle{Three Levels of Processing}
@@ -1314,14 +1399,13 @@ Conventions are cultural constraints.  They are initially arbitrary, but evolve 
 
 \begin{frame}
 	\frametitle{Activities}
-	\begin{block}{Design Workshop}
+    \begin{tcolorbox}[colback=blue!10, colframe=blue!50!black, title=Design Workshop]
 		\footnotesize
-		Shower at hotel is something simple that is often frustrating.  Have your encounter relatives where they have difficulty understanding how the shower works?  Have you ever turn on the shower with water splash right on your face when it's not intended?  Attempt to redesign the shower system. \\
+		Shower at hotel is something simple that is often frustrating.  Have your encounter relatives where they have difficulty understanding how the shower works?  Have you ever turn on the shower with water splash right on your face when it's not intended?  Attempt to redesign the shower system.
 		\centering
 		\includegraphics[width=.3\linewidth]{faucet}
-	\end{block}
+	\end{tcolorbox}
 \end{frame}
-
 
 \begin{frame}
 	\frametitle{Discussion}
